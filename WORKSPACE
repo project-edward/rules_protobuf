@@ -36,12 +36,11 @@ closure_repositories()
 git_repository(
     name = "io_bazel_rules_dotnet",
     remote = "https://github.com/pcj/rules_dotnet.git",
-    commit = "b23e796dd0be27f35867590309d79ffe278d4eeb",
+    commit = "20aedbe6bf5ed4ba0124d8160f73aaf56fbf26a0",
 )
 
 load("@io_bazel_rules_dotnet//dotnet:csharp.bzl", "csharp_repositories")
-
-csharp_repositories(use_local_mono = False)
+csharp_repositories()
 
 # ================================================================
 # Specific Languages Support
