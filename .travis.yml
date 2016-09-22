@@ -43,9 +43,9 @@ script:
       --spawn_strategy=standalone \
       --genrule_strategy=standalone \
       --local_resources=400,1,1.0 \
-      examples/cpp/... \
-      examples/go/... \
-      examples/java/... \
+      examples/helloworld/cpp/... \
+      examples/helloworld/go/... \
+      examples/helloworld/java/... \
       $FLAGS
 
 notifications:
